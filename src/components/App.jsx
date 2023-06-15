@@ -31,7 +31,6 @@ export const App = () => {
       : 0;
   };
   const countTotalFeedback = () => {
-    console.log('hhhhhhhhhh');
     return good + bad + neutral;
   };
 
