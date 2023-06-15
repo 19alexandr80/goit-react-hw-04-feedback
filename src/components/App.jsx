@@ -12,13 +12,13 @@ export const App = () => {
   const countFeedback = e => {
     switch (e.target.name) {
       case 'good':
-        setGood(good + 1);
+        setGood(prevGood => prevGood + 1);
         break;
       case 'neutral':
-        setNeutral(neutral + 1);
+        setNeutral(prevNeutral => prevNeutral + 1);
         break;
       case 'bad':
-        setBad(bad + 1);
+        setBad(prevBad => prevBad + 1);
         break;
 
       default:
